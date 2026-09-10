@@ -1,10 +1,10 @@
 <pre>
 ╔══════════════════════════════════════════════════════════╗
 ║                                                          ║
-║   [ PWED404 TOOL ]                                      ║
-║   > assistente visual para o scanner inurlbr            ║
+║   [ PWED404 TOOL ]                                       ║
+║   > assistente visual para o scanner inurlbr             ║
 ║                                                          ║
-║   https://mrcl0wnlab.github.io/SCANNER-INURLBR/         ║
+║  https://rixadi.github.io/InurlBR-Scanner-Help/)         ║
 ║                                                          ║
 ╚══════════════════════════════════════════════════════════╝
 </pre>
@@ -53,7 +53,7 @@ Exemplo de saida gerada:
 
 ---
 
-## 6. CREDITOS
+## CREDITOS
 
     [*] SCANNER-INURLBR       - MrCl0wnLab
     [*] dorks de referencia   - sundowndev
