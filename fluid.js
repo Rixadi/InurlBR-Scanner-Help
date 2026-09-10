@@ -32,7 +32,7 @@ const originalWidth = Math.max(...originalLines.map(l => l.length));
 
 let multiplier;
 if (window.innerWidth > 1024) {
-    multiplier = 1.79;  // for desktop
+    multiplier = 0.0;  // full-screen: sem expansao
 } else {
     multiplier = 0.0; // for mobile
 }
@@ -784,11 +784,11 @@ const createDensityOverlays = () => {
         
         // Copy exact styles from original element
         const originalStyles = window.getComputedStyle(tempArtElement);
-        overlay.style.position = 'absolute';
-        overlay.style.top = tempArtElement.offsetTop + 'px';
-        overlay.style.left = tempArtElement.offsetLeft + 'px';
-        overlay.style.width = tempArtElement.offsetWidth + 'px';
-        overlay.style.height = tempArtElement.offsetHeight + 'px';
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0px';
+        overlay.style.left = '0px';
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
         overlay.style.background = 'transparent';
         overlay.style.color = layer.color;
         overlay.style.fontFamily = originalStyles.fontFamily;
@@ -799,7 +799,7 @@ const createDensityOverlays = () => {
         overlay.style.pointerEvents = 'none';
         overlay.style.whiteSpace = 'pre';
         overlay.style.overflow = 'hidden';
-        overlay.style.zIndex = `${10 + index}`;
+        overlay.style.zIndex = `${index}`;
         
         tempArtElement.parentElement.appendChild(overlay);
         overlays.push({ element: overlay, layer: layer });
